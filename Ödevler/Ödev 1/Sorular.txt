@@ -1,0 +1,4 @@
+Ödev Metni:
+1. Klavyeden girilen iki sayıyı toplayıp, çıkarıp, çarpıp, bölerek işlem sonuçlarını sırasıyla alt alta ekrana yazan programı yazınız.
+2. Klavyeden girilen iki sayıyı karşılaştırıp büyüğünü bulup ekrana yazdıran programı yazınız.
+3. Klavyeden girilen 3 adet tam sayının ortalamasını ekrana yazdıran programı yazınız.
