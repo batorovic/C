@@ -8,7 +8,7 @@ int main()
 {
 	srand(time(NULL));
 	setlocale(LC_ALL,"Turkish");
-	//10'a 10 matris random deðer at asallarý bul ekrana yaz;
+	//10'a 10 matris random deÄŸer at asallarÄ± bul ekrana yaz;
 	int matris[10][10],kontrol=0,i,j;
 	
 	
@@ -27,7 +27,7 @@ int main()
 					kontrol = 1;
 				}
 			}
-			if(kontrol == 0) printf("[%d][%d] = %d asaldýr.\n",i,j,matris[i][j]);
+			if(kontrol == 0) printf("[%d][%d] = %d asaldÄ±r.\n",i,j,matris[i][j]);
 		}
 
 	}
