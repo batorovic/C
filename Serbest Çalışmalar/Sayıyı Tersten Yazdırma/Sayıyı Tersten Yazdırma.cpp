@@ -4,9 +4,9 @@
 int main()
 {
 	setlocale(LC_ALL,"Turkish");
-	//sayıyı tersten yazdırma
+	//sayÄ±yÄ± tersten yazdÄ±rma
 	int sayi,ters=0;
-	printf("Lütfen sayıyı giriniz : ");
+	printf("LÃ¼tfen sayÄ±yÄ± giriniz : ");
 	scanf("%d",&sayi);
 	
 	while(sayi != 0)
