@@ -5,11 +5,11 @@
 
 void soru1()
 {
-	//kullanÄ±cÄ± pozitif tam sayÄ± girdiÄŸi sÃ¼rece kaÃ§ tanesinin tek ve 5e tam bÃ¶lÃ¼ndÃ¼ÄŸÃ¼nÃ¼ bulan program.
+	//kullanıcı pozitif tam sayı girdiği sürece kaç tanesinin tek ve 5e tam bölündüğünü bulan program.
 	int sayi,sayac=0;
 	while(1)
 	{
-		printf("SayÄ±yÄ± giriniz. ");
+		printf("Sayıyı giriniz. ");
 		scanf("%d",&sayi);			
 		if(sayi > 0)
 		{
@@ -21,30 +21,30 @@ void soru1()
 		else break;
 	}
 	
-	printf("%d adet tek ve 5'e bÃ¶lÃ¼nen sayÄ± girilmiÅŸtir.",sayac);
+	printf("%d adet tek ve 5'e bölünen sayı girilmiştir.",sayac);
 	
 }
 
 void soru2()
 {
-	//10 boyutlu 2 adet diziye klavyeden sayÄ± girilsin.
-	//ilk dizideki Ã§ift indis deÄŸerleri
-	//ikinci dizideki tek indis deÄŸerleriyle deÄŸiÅŸtir.
+	//10 boyutlu 2 adet diziye klavyeden sayı girilsin.
+	//ilk dizideki çift indis değerleri
+	//ikinci dizideki tek indis değerleriyle değiştir.
 	
 	
 	int dizi1[4],dizi2[4],tut=0;
 	
 	for(int i = 0; i<4;i++)
 	{
-		printf("1.dizinin %d. deÄŸerine deÄŸer giriniz: ",i+1);
+		printf("1.dizinin %d. değerine değer giriniz: ",i+1);
 		scanf("%d",&dizi1[i]);
 	}
 	
 	for(int i = 0; i<4;i++)
 	{
-		printf("2.dizinin %d. deÄŸerine deÄŸer giriniz: ",i+1);
+		printf("2.dizinin %d. değerine değer giriniz: ",i+1);
 		scanf("%d",&dizi2[i]);
-		//Ã§iftleri 2.diziye tekleri 1.diziye almak.
+		//çiftleri 2.diziye tekleri 1.diziye almak.
 		/*if(dizi2[i] % 2 != 0)
 		{
 			for(int k = 0;k<10;k++)
@@ -63,8 +63,8 @@ void soru2()
 	
 	for(int i = 0;i<4;i+=2)
 	{
-	//ilk dizideki Ã§ift indis deÄŸerleri
-	//ikinci dizideki tek indis deÄŸerleriyle deÄŸiÅŸtir.
+	//ilk dizideki çift indis değerleri
+	//ikinci dizideki tek indis değerleriyle değiştir.
 	
 		tut = dizi2[i+1];
 		dizi2[i+1] = dizi1[i];
@@ -90,13 +90,13 @@ void soru2()
 
 void soru3()
 {
-	//girilen 100 sayÄ±dan bir sonrakinin yarÄ±sÄ± olan kaÃ§ sayÄ± vardÄ±r? ! 100 hariÃ§ !
+	//girilen 100 sayıdan bir sonrakinin yarısı olan kaç sayı vardır? ! 100 hariç !
 	
 	int i = 0,tut=0,sayi,sayac=0;
 	while(i<5)
 	{
 	
-		printf("SayÄ±yÄ± giriniz : ");
+		printf("Sayıyı giriniz : ");
 		scanf("%d",&sayi);
 		if((float)sayi / 2 == tut)
 		{
@@ -113,15 +113,15 @@ void soru3()
 
 void soru5()
 {
-	//10x10luk matrisin transpozu (satÄ±rlar sutun haline gelir.)
+	//10x10luk matrisin transpozu (satırlar sutun haline gelir.)
 	// 2 3
 	// 4 5
 	// transpoz olursa:
 	// 2 4
 	// 3 5 	
 
-	//random iÃ§in <stdlib.h> kÃ¼tÃ¼phanesi eklenir.
-	//her seferinde farklÄ± sayÄ±lar Ã¼retmesi iÃ§in #include <time.h> kÃ¼tÃ¼phanesi eklenir. srand(time(NULL)); komutu koda eklenir.
+	//random için <stdlib.h> kütüphanesi eklenir.
+	//her seferinde farklı sayılar üretmesi için #include <time.h> kütüphanesi eklenir. srand(time(NULL)); komutu koda eklenir.
 	srand(time(NULL));
 	
 	int matris[10][10];
@@ -161,10 +161,8 @@ int main()
 	//soru1();
 	soru2();
 	//soru3();
-	//soru4 fonksiyon ne olduÄŸunu anlamadÄ±m soru yok
+	//soru4 fonksiyon ne olduğunu anlamadım soru yok
 	//soru5();
 	return 0;
 }
-
-
 
