@@ -1,5 +1,0 @@
-Ödev Metni:
-1- Kullanıcı tarafından "Vize Notu=" ve "Final Notu=" girilerek Ortalama hesaplanacak. Ortalaması 60 ve üstünde ise ekrana “GEÇTİNİZ” yazacak. Ortalaması 60'ın altında ise kullanıcıdan "Bütünleme Notu=" istenecek ve Öğrencinin Ortalaması tekrar hesaplanacak. Hesaplanan ortalama 60’ın altında ise “KALDINIZ” değilse “GEÇTİNİZ” yazacak.
-(Ortalama=0,6*[Final veya Bütünleme]+0,4*Vize)
-2- Kullanıcı tarafından girilen sayıya kadar olan çift sayıların toplamını ve ortalamasını ekrana yazdıran program kodunu yazınız.(for döngüsü kullanılarak yapılmalı)
-3- Kullanıcıdan 4 adet sayı istenilecek. Bu sayılardan tek olanların aritmetik ortalamasını, çift olanların geometrik ortalamasını hesaplayarak ekrana yazınız. (Kod içerisinde sadece 1 adet scanf komutu kullanabilirsiniz.)
