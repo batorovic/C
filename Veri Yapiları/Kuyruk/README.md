@@ -24,13 +24,25 @@ kuyruk veri yapılarıdır. Bunlar dışında yapı/değişken/nesne kullanmayı
 - öncelik :1
 - isim = Melek
 
-|## Ekleme Oncesi|
-| Öncelik	|	İsim | 														
-|	:---:      |     :---:      | 
-|	0  	| Veli     | 
-|	0    | Ayşe       | 
-|	1	 	| Kamile	|
-|	1		| Zeynep	|
+**Ekleme Oncesi**        
+| Öncelik	|	İsim 	| 												  
+|	:---:      |     :---:|   
+|	0  	| Veli    | 
+|	0    | Ayşe  |     
+|	1	 	| Kamile|
+|	1		| Zeynep|	
 |	1		| Ali|
 |	2		| Mehmet|
-|	2		| Mert|
+|	2		| Mert |
+
+**Ekleme Sonrası**
+| Öncelik	|	İsim 	| 												  
+|	:---:      |     :---:|   
+|	0  	| Veli    | 
+|	0    | Ayşe  |     
+|	1	 	| Kamile|
+|	1		| Zeynep|	
+|	1		| Ali|
+|1|Melek|
+|	2		| Mehmet|
+|	2		| Mert |
