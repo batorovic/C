@@ -19,12 +19,12 @@ D-) Kuyruğa kişi ekleme kodunu aşağıda verilen şartları kapsayacak şekil
 Bu işlemi gerçekleştirirken, verileri tampon olarak aktarabileceğiniz veri yapıları, bağlı liste, yığın ya da
 kuyruk veri yapılarıdır. Bunlar dışında yapı/değişken/nesne kullanmayınız.
 
-Örnek:
-- Yukarıda verilen text dosyasındaki verileri eklediğimiz bir kuyruğa aşağıdaki eklemeyi yaparsak;
+Örnek:\
+Yukarıda verilen text dosyasındaki verileri eklediğimiz bir kuyruğa aşağıdaki eklemeyi yaparsak;
 - öncelik :1
 - isim = Melek
 
-**Ekleme Oncesi**        
+**Ekleme Öncesi**        
 | Öncelik	|	İsim 	| 												  
 |	:---:      |     :---:|   
 |	0  	| Veli    | 
