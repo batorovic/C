@@ -46,3 +46,5 @@ Yukarıda verilen text dosyasındaki verileri eklediğimiz bir kuyruğa aşağı
 |1|Melek|
 |	2		| Mehmet|
 |	2		| Mert |
+
+
