@@ -1,6 +1,7 @@
 # Stack Ödevi
 
-Bu ödevde tamsayı türünde verilerin tutulduğu ve üzerinde işlem yapıldığı bir yığın (stack) sistemi tasarlanacaktır. Sistem üzerinde stack yapısı kullanarak geri alma işleminin gerçekleştirilmesi amaçlanmaktadır. Bu işlemler için kullanılan komutlar aşağıda açıklanmıştır.\
+Bu ödevde tamsayı türünde verilerin tutulduğu ve üzerinde işlem yapıldığı bir yığın (stack) sistemi tasarlanacaktır. Sistem üzerinde stack yapısı kullanarak geri alma işleminin gerçekleştirilmesi amaçlanmaktadır. Bu işlemler için kullanılan komutlar aşağıda açıklanmıştır.
+
 EKLE X: X tamsayısı işlem stack’ine eklenecek\
 SİL: Stack’deki son eleman silinecek\
 YAZDIR: Stack içindeki elemanlar ekrana stack mantığında listelenecek ( son giren ilk çıkar)\
