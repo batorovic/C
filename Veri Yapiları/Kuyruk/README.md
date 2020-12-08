@@ -5,9 +5,12 @@ Sayı) oluşturacağınız kuyruk veri yapısına aktarınız. Kuyruk veri yapı
 tanımlayabilirsiniz. (Dosyada kayıtlar öncelik sırasına göre tutulmakta olup, 0 en öncelikli kayıttır. Diğer
 numaralar (1, 2, 3, … öncelikler azalarak devam etmektedir. Dosyadan ekleme sırasında sıranın doğru
 oluşturulduğu kabul edilerek, doğrudan text dosyasındaki sırayla eklemeler yapılabilir.\
+
 B-) Tüm kuyruktaki kişileri listeleyen kodu yazınız.\
+
 C-) İsmi verilen bir kullanıcının önünde kaç kişi olduğunu veren bir kod yazınız. Örnek: yukarıdaki dosya
 içeriğine göre Mehmet’in önünde 5 kişi vardır.\
+
 D-) Kuyruğa kişi ekleme kodunu aşağıda verilen şartları kapsayacak şekilde yazınız.
 
 - Kuyruğa eklenecek kişinin adını ve öncelik numarasını alınız.
@@ -16,7 +19,7 @@ D-) Kuyruğa kişi ekleme kodunu aşağıda verilen şartları kapsayacak şekil
 Bu işlemi gerçekleştirirken, verileri tampon olarak aktarabileceğiniz veri yapıları, bağlı liste, yığın ya da
 kuyruk veri yapılarıdır. Bunlar dışında yapı/değişken/nesne kullanmayınız.
 
-- Örnek:
+Örnek:
 - Yukarıda verilen text dosyasındaki verileri eklediğimiz bir kuyruğa aşağıdaki eklemeyi yaparsak;
 - öncelik :1
 - isim = Melek
