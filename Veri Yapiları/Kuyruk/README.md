@@ -4,12 +4,12 @@ A-) Yukarıda içeriği verilen bir metin dosyasındaki tüm isimleri ve bu isim
 Sayı) oluşturacağınız kuyruk veri yapısına aktarınız. Kuyruk veri yapısını isteğiniz şekilde (bağlı liste, dizi, vb.)
 tanımlayabilirsiniz. (Dosyada kayıtlar öncelik sırasına göre tutulmakta olup, 0 en öncelikli kayıttır. Diğer
 numaralar (1, 2, 3, … öncelikler azalarak devam etmektedir. Dosyadan ekleme sırasında sıranın doğru
-oluşturulduğu kabul edilerek, doğrudan text dosyasındaki sırayla eklemeler yapılabilir.\
+oluşturulduğu kabul edilerek, doğrudan text dosyasındaki sırayla eklemeler yapılabilir.
 
-B-) Tüm kuyruktaki kişileri listeleyen kodu yazınız.\
+B-) Tüm kuyruktaki kişileri listeleyen kodu yazınız.
 
 C-) İsmi verilen bir kullanıcının önünde kaç kişi olduğunu veren bir kod yazınız. Örnek: yukarıdaki dosya
-içeriğine göre Mehmet’in önünde 5 kişi vardır.\
+içeriğine göre Mehmet’in önünde 5 kişi vardır.
 
 D-) Kuyruğa kişi ekleme kodunu aşağıda verilen şartları kapsayacak şekilde yazınız.
 
