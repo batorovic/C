@@ -3,16 +3,19 @@
 #include <string.h>
 #include <conio.h>
 
-typedef struct Bliste
+struct Bliste
 {
   int oncelik;
   char isim[100];
   Bliste *sonraki;
+};
 
-} Bliste;
+typedef struct Bliste Bliste;
 
 Bliste *kuyrukHead = NULL, *kuyrukSon = NULL;
 Bliste *geciciKuyrukHead = NULL, *geciciKuyrukSon = NULL;
+
+char menuEkrani();
 
 int BlisteDolumu();
 int BlisteBosmu();
@@ -23,61 +26,41 @@ void temizle(Bliste **);
 void geciciKuyrukEle(Bliste **, Bliste *);
 void kuyrugaEkle(Bliste *);
 void kuyruguListele();
+void dosyadanKuyrugaEkle();
+
+//Menu
+void ekle();
+void listele();
+void cikis();
+void arama();
+
+//
+
+Bliste *dosyadanVeriyiOku(FILE *);
+Bliste *getNewNode();
 
 int main()
 {
   char secim;
-  char *isim = (char *)malloc(sizeof(char) * 100);
 
-  FILE *fp = NULL;
-  if ((fp = fopen("veriler.txt", "r")) == NULL)
-  {
-    printf("Dosya acilamadi");
-    return 1;
-  }
-
-  Bliste *node = (Bliste *)malloc(sizeof(Bliste));
-
-  while (!feof(fp))
-  {
-
-    node = (Bliste *)malloc(sizeof(Bliste));
-    node->sonraki = NULL;
-    fscanf(fp, "%d %s", &node->oncelik, node->isim);
-    kuyrugaEkle(node);
-  }
+  dosyadanKuyrugaEkle();
 
   while (1)
   {
-    printf("\n");
-    printf("e)Ekleme\na)Arama\nl)Listele\nc)Cikis\n\n");
-    fflush(stdin);
-    secim = getchar();
+    secim = menuEkrani();
 
     switch (secim)
     {
     case 'e':
-      node = (Bliste *)malloc(sizeof(Bliste));
-      node->sonraki = NULL;
-      printf("Oncelik : ");
-      scanf("%d", &node->oncelik);
-      printf("Isim : ");
-      scanf("%s", node->isim);
-      kuyrugaEkle(node);
-      printf("%d %s basariyla kuyruga eklendi.\n", node->oncelik, node->isim);
+      ekle();
       break;
     case 'a':
-      printf("\n");
-      printf("Aranacak isim : ");
-      scanf("%s", isim);
-      kacSiraVar(isim) == 0 ? printf("Kuyrukta Yok\n") : printf("%d sira vardir.\n", kacSiraVar(isim) - 1);
+      arama();
       break;
     case 'l':
-      printf("\n");
       kuyruguListele();
       break;
     case 'c':
-      free(isim);
       temizle(&kuyrukHead);
       return 0;
     default:
@@ -87,8 +70,68 @@ int main()
   }
 }
 
+char menuEkrani()
+{
+  printf("\n");
+  printf("e)Ekleme\na)Arama\nl)Listele\nc)Cikis\n\n");
+  fflush(stdin);
+  return getchar();
+}
+
+void ekle()
+{
+  Bliste *node = getNewNode();
+  node->sonraki = NULL;
+  printf("Oncelik : ");
+  scanf("%d", &node->oncelik);
+  printf("Isim : ");
+  scanf("%s", node->isim);
+  kuyrugaEkle(node);
+  printf("%d %s basariyla kuyruga eklendi.\n", node->oncelik, node->isim);
+}
+
+void arama()
+{
+  char *isim = (char *)malloc(sizeof(char) * 100);
+  printf("\n");
+  printf("Aranacak isim : ");
+  scanf("%s", isim);
+  kacSiraVar(isim) == 0 ? printf("Kuyrukta Yok\n") : printf("%d sira vardir.\n", kacSiraVar(isim) - 1);
+  free(isim);
+}
+
+void dosyadanKuyrugaEkle()
+{
+  FILE *fp;
+  if ((fp = fopen("veriler.txt", "r")) == NULL)
+  {
+    printf("Dosya acilamadi");
+    exit(1);
+  }
+
+  while (!feof(fp))
+    kuyrugaEkle(dosyadanVeriyiOku(fp));
+
+  fclose(fp);
+}
+
+Bliste *dosyadanVeriyiOku(FILE *fp)
+{
+  Bliste *newNode = getNewNode();
+  newNode->sonraki = NULL;
+  fscanf(fp, "%d %s", &newNode->oncelik, newNode->isim);
+
+  return newNode;
+}
+Bliste *getNewNode()
+{
+  return (Bliste *)malloc(sizeof(Bliste));
+}
+
 void kuyruguListele()
 {
+  printf("\n");
+
   Bliste *gecici = kuyrukHead;
 
   while (gecici)
